@@ -409,15 +409,19 @@ p {
         margin-top: 1rem;
     }
 
+    .prf__content__box-content {
+        padding: 1rem;
+    }
+
 }
 
 @media (max-width: 720px) {
     .prf__primary__heading::before {
-        width: 25%;
+        width: 20%;
     }
 
     .prf__primary__heading::after {
-        width: 25%;
+        width: 20%;
     }
 }
 
@@ -425,4 +429,233 @@ p {
     .prf__content__box-image {
         max-width: 200px;
     }
+    .prf__primary__heading::before {
+        width: 10%;
+    }
+
+    .prf__primary__heading::after {
+        width: 10%;
+    }
 }
+
+/* RWD */
+
+/* Porfolio */
+
+/* Blog */
+
+.blg {
+    margin-top: 5rem;
+}
+
+.blg__primary__heading {
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.blg__primary__heading::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 0;
+    width: 45%;
+    height: 1px;
+    background-color: var(--grey-color);
+}
+
+.blg__primary__heading::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 50%;
+    right: 0;
+    width: 45%;
+    height: 1px;
+    background-color: var(--grey-color);
+}
+
+.blg__wrapper {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    background-color: #f7f7f7;
+}
+
+.blg__content__box {
+    padding-bottom: 2rem;
+    border-bottom: 0.5px solid;
+    border-color: var(--link-color);
+    background-color: #fff;
+    margin-right: 3rem;
+}
+
+.blg__content__box-link {}
+
+.blg__content__box-image {
+    max-width: 700px;
+}
+
+.blg__content__box-heading {
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+.blg__content__box__info-text {
+    font-size: 1rem;
+    color: var(--link-color);
+    font-weight: 200;
+    font-style: italic;
+    padding: 0 2rem
+}
+
+.blg__content__box-content {
+    font-size: 1rem;
+    color: var(--link-color);
+    font-weight: 300;
+    padding: 0 2rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.blg__btn-box {
+    display: flex;
+    justify-content: space-around;
+}
+
+.blg__btn {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: black;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    border-radius: 7px;
+    position: relative;
+    transition: 0.2s ease-in-out;
+}
+
+.blg__btn:hover {
+    opacity: 0.94;
+}
+
+.blg__btn:nth-child(1) {
+    background-color: var(--link-color);
+}
+
+.blg__btn:nth-child(2) {
+    background-color: var(--grey-color);
+}
+
+.blg__btn:nth-child(1)::before {
+    content: url(/file-lines-regular.svg);
+    position: absolute;
+    display: block;
+    top: 25%;
+    left: 6%;
+    width: 20px;
+    height: 10px;
+}
+
+.blg__btn:nth-child(2)::before {
+    content: url(/comment-regular.svg);
+    position: absolute;
+    display: block;
+    top: 33%;
+    left: 6%;
+    width: 20px;
+    height: 10px;
+}
+
+/* RWD */
+
+@media (max-width: 1200px) {
+    .blg__wrapper {
+        max-width: 600px;
+        grid-template-columns: repeat(1, 1fr);
+        background-color: #fff;
+    }
+
+    .blg__primary__heading::before {
+        width: 38%;
+    }
+
+    .blg__primary__heading::after {
+        width: 38%;
+    }
+}
+
+@media (max-width: 720px) {
+    .blg__wrapper {
+        max-width: 500px;
+    }
+
+    .blg__content__box-image {
+        max-width: 400px;
+        margin-top: 1rem;
+    }
+
+    .blg__content__box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+    .blg__primary__heading::before {
+        width: 30%;
+    }
+
+    .blg__primary__heading::after {
+        width: 30%;
+    }
+
+    .blg__btn {
+        font-size: 0.8rem;
+        padding: 1rem 2rem;
+        justify-content: space-between;
+        margin-right: 2rem;
+    }
+
+    .blg__btn:nth-child(1)::before {
+        top: 27%;
+        width: 15px;
+    }
+
+    .blg__btn:nth-child(2)::before {
+        top: 34%;
+        width: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .blg__wrapper {
+        max-width: 370px;
+    }
+
+    .blg__content__box-image {
+        max-width: 340px;
+        margin-top: 1rem;
+    }
+
+    .blg__btn-box {
+        flex-direction: column;
+    }
+
+    .blg__btn {
+        font-size: 1rem;
+        margin-right: 0;
+        margin-top: 2rem;
+    }
+
+}
+
+/* RWD */
+
+/* Blog */
