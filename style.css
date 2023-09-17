@@ -838,3 +838,152 @@ p {
 /* RWD */
 
 /* Information */
+
+/* Footer */
+
+.ftn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #252122;
+    overflow-x: hidden;
+}
+
+.ftn__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin-top: 5rem;
+    
+}
+
+.ftn__list__box {
+ flex: 1;
+}
+
+.ftn__list__box__primary-heading {
+    font-size: 1.7rem;
+    color: var(--white-color);
+}
+
+.ftn__list {
+    list-style: none;
+    margin-top: 1.5rem;
+    
+}
+
+.ftn__list-item {
+    padding-top: 2rem;
+}
+
+.ftn__list-link {
+    color: #b6adad;
+    font-weight: 200;
+}
+
+.ftn__info__box {
+ flex: 1;
+ display: flex;
+ flex-direction: column;
+ margin-left: 4rem;
+}
+
+.ftn__info__box__primary-heading {
+    font-size: 1.7rem;
+    color: var(--white-color);
+}
+
+.ftn__info__box-icons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.ftn__info__box__icon-link {
+    font-size: 1.6rem;
+    color: var(--white-color);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.ftn__info__box__icon-link:nth-child(1) {
+    background-color: var(--dark-grey);
+}
+
+.ftn__info__box__icon-link:nth-child(2) {
+    background-color: #2daae4;
+}
+
+.ftn__info__box__icon-link:nth-child(3) {
+    background-color: var(--grey-color);
+}
+
+.ftn__info__box__icon-link:nth-child(4) {
+    background-color: #ff4500;
+}
+
+.ftn__info__box-icon {
+
+}
+
+.ftn__info__box-contact {
+    padding-top: 2rem;
+    font-size: 1.2rem;
+    color: var(--link-color);
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+.ftn__info__box-contact-important {
+    color: var(--white-color);
+    font-size: 1.4rem;
+    display: inline-block;
+    align-items: start;
+    margin-right: 5rem;
+
+}
+
+
+/* RWD */
+
+@media (max-width: 1300px) {
+    .ftn__list__box {
+            padding: 2rem;
+        }
+    .ftn__info__box {
+        padding: 2rem;
+        margin-left: 1rem;
+    }
+    .ftn__wrapper {
+        max-width: 1000px;
+    }
+
+}
+
+@media (max-width: 1100px) {
+    .ftn__wrapper {
+        max-width: 700px;
+    }
+
+    .ftn__info__box__primary-heading {
+        text-align: center;
+    }
+
+    .ftn__info__box-contact {
+        text-align: center;
+        
+    }
+
+        .ftn__info__box-icons {
+        justify-content: space-around;
+    }
+
+        .ftn__info__box-contact-important {
+            display: none;
+        }
+
+
+
+}
