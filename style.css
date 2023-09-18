@@ -11,6 +11,10 @@ html {
     font-size: 16px;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 h1 {
     font-size: 2.5rem;
     color: #252122;
@@ -108,6 +112,11 @@ p {
 /* RWD */
 
 @media (max-width: 820px) {
+
+    .logo {
+        height: 10vh;
+    }
+
     .menu__list {
         flex-direction: column;
         align-items: center;
@@ -155,6 +164,12 @@ p {
 }
 
 /* RWD */
+
+@media (max-width: 820px) {
+    .main {
+        margin-top: 0.5rem;
+    }
+}
 
 @media (max-width: 660px) {
     .main__content-box {
@@ -655,6 +670,17 @@ p {
         margin-top: 2rem;
     }
 
+    @media (max-width: 370px) {
+        .blg__wrapper {
+            max-width: 250px;
+        }
+
+        .blg__content__box-image {
+            max-width: 250px;
+
+        }
+    }
+
 }
 
 /* RWD */
@@ -846,7 +872,7 @@ p {
     justify-content: center;
     align-items: center;
     background-color: #252122;
-    overflow-x: hidden;
+    padding-bottom: 4rem
 }
 
 .ftn__wrapper {
@@ -856,11 +882,11 @@ p {
     align-items: center;
     max-width: 1200px;
     margin-top: 5rem;
-    
+
 }
 
 .ftn__list__box {
- flex: 1;
+    flex: 1;
 }
 
 .ftn__list__box__primary-heading {
@@ -871,7 +897,7 @@ p {
 .ftn__list {
     list-style: none;
     margin-top: 1.5rem;
-    
+
 }
 
 .ftn__list-item {
@@ -884,10 +910,10 @@ p {
 }
 
 .ftn__info__box {
- flex: 1;
- display: flex;
- flex-direction: column;
- margin-left: 4rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 4rem;
 }
 
 .ftn__info__box__primary-heading {
@@ -924,9 +950,7 @@ p {
     background-color: #ff4500;
 }
 
-.ftn__info__box-icon {
-
-}
+.ftn__info__box-icon {}
 
 .ftn__info__box-contact {
     padding-top: 2rem;
@@ -950,14 +974,21 @@ p {
 
 @media (max-width: 1300px) {
     .ftn__list__box {
-            padding: 2rem;
-        }
+        padding: 2rem;
+    }
+
     .ftn__info__box {
         padding: 2rem;
         margin-left: 1rem;
     }
+
     .ftn__wrapper {
         max-width: 1000px;
+    }
+
+    .ftn__info__box-contact-important {
+        font-size: 1rem;
+        margin-right: 0.5rem;
     }
 
 }
@@ -973,16 +1004,12 @@ p {
 
     .ftn__info__box-contact {
         text-align: center;
-        
+
     }
 
-        .ftn__info__box-icons {
+    .ftn__info__box-icons {
         justify-content: space-around;
     }
-
-        .ftn__info__box-contact-important {
-            display: none;
-        }
 
 
 
