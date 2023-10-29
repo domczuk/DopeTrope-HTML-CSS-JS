@@ -71,9 +71,7 @@ p {
 
 /* Nav */
 
-.menu {
-
-}
+.menu {}
 
 .nav__container {
     display: flex;
@@ -151,12 +149,12 @@ p {
         cursor: pointer;
         display: flex;
         padding: 0;
-        position: fixed;
+        position: absolute;
         top: 8%;
         left: 10%;
-        }
+    }
 
-      #hamburger .line {
+    #hamburger .line {
         fill: none;
         stroke: #000000;
         stroke-width: 6;
@@ -195,7 +193,8 @@ p {
         stroke-dashoffset: -134;
         stroke-width: 6;
     }
-     .menu__list {
+
+    .menu__list {
         flex-direction: column;
         max-height: 0;
         overflow: hidden;
@@ -220,14 +219,15 @@ p {
 .main {
     height: 60vh;
     margin-top: 5rem;
-    background: #CCE8F4 url(pic01.jpg);
+    background: #CCE8F4 url(assets/pic01.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: auto 100%;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    background-attachment: fixed;
 }
 
 .main__content-box {
@@ -653,7 +653,7 @@ p {
 }
 
 .blg__btn:nth-child(1)::before {
-    content: url(/file-lines-regular.svg);
+    content: url(assets/file-lines-regular.svg);
     position: absolute;
     display: block;
     top: 25%;
@@ -663,7 +663,7 @@ p {
 }
 
 .blg__btn:nth-child(2)::before {
-    content: url(/comment-regular.svg);
+    content: url(assets/comment-regular.svg);
     position: absolute;
     display: block;
     top: 33%;
@@ -991,6 +991,7 @@ p {
 .ftn__list-link {
     color: #b6adad;
     font-weight: 200;
+    text-decoration: none;
 }
 
 .ftn__info__box {
